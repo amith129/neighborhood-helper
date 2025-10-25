@@ -1,0 +1,119 @@
+#app-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; /* horizontally center */
+  padding: 40px 20px; /* space from top */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#app-container {
+  min-height: 100vh;
+}
+
+
+
+.main-heading {
+  font-size: 2.2rem;
+  color: #ffffff !important; /* force light color */
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+
+/* Reset and global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* dark background */
+  margin: 0;
+  padding: 0;
+  display: block; /* change from flex */
+  color: #e0e0e0;
+}
+
+
+/* Root container */
+#root {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form container */
+form {
+  width: 100%;
+  background-color: #1e1e1e; /* dark card */
+  color: #e0e0e0;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #4338ca;
+}
+
+/* Posts wrapper */
+.posts-wrapper {
+  width: 100%;
+  background-color: #1e1e1e; /* dark container */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+}
+
+/* Heading */
+.posts-wrapper h2 {
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+/* Individual post cards */
+div.post {
+  background-color: #2a2a2a; /* slightly lighter than wrapper */
+  color: #e0e0e0;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Force all text inside posts to light color */
+div.post * {
+  color: #e0e0e0 !important;
+}
